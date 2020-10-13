@@ -1,8 +1,6 @@
 package org.example.matura;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class CollectionsExample {
@@ -30,6 +28,24 @@ public class CollectionsExample {
         stack.push("kota");
 
         System.out.println(stack.peek());
+
+        System.out.println(stack.pop());
+
+        System.out.println(stack.peek());
+
+        System.out.println(stack.search("ala"));
+
+        Deque<String> queue = new ArrayDeque<>();
+        queue.add("ala");
+        queue.add("ma");
+        queue.add("kota");
+        queue.add("i");
+        queue.add("psa");
+
+        System.out.println(queue.poll());
+        System.out.println(queue.element());
+        System.out.println(queue.element());
+        System.out.println(queue.offer("elo"));
     }
 
     public static boolean listContains(List<Integer> list, int numberToFind) {
