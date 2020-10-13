@@ -58,4 +58,9 @@ public class ArraysExampleTest {
         int[] testArraySortedDesc = {25, 13, 9, 6, 3, 1};
         assertThat(result).isEqualTo(testArraySortedDesc);
     }
+
+    @Test
+    public void shouldFail() {
+        assertThat(true).isFalse();
+    }
 }
