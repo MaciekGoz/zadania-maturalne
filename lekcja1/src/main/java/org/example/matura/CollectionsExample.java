@@ -2,6 +2,7 @@ package org.example.matura;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class CollectionsExample {
@@ -22,6 +23,13 @@ public class CollectionsExample {
         } else {
             System.out.println("lista nie zawiera 50");
         }
+
+        Stack<String> stack = new Stack<>();
+        stack.push("ala");
+        stack.push("ma");
+        stack.push("kota");
+
+        System.out.println(stack.peek());
     }
 
     public static boolean listContains(List<Integer> list, int numberToFind) {
