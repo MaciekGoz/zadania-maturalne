@@ -58,4 +58,13 @@ public class ArraysExampleTest {
         int[] testArraySortedDesc = {25, 13, 9, 6, 3, 1};
         assertThat(result).isEqualTo(testArraySortedDesc);
     }
+
+    @Test
+    public void bubbleSort_shouldReturn_sortedArray_2() {
+        int[] result = ArraysExample.bubbleSortOfNumbersFromArray(new int[] {2, 3, 2, 1});
+
+        int[] testArraySortedDesc = {3, 2, 2, 1};
+        assertThat(result).isEqualTo(testArraySortedDesc);
+    }
+
 }
