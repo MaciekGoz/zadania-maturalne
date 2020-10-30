@@ -1,3 +1,5 @@
 rootProject.name = 'zadania-maturalne'
 include 'lekcja1'
+include 'lekcja2'
+include 'lekcja3'
 
